@@ -34,7 +34,7 @@ function Navbar() {
     const navItems=(<>  <li><a  href="/">Home</a></li>
     <li><a  href="/views">View All Users</a></li>
       <li><a href="/transfer">Transfer Money</a></li>
-      <li><a>Transaction History</a></li>
+      <li><a href="/createUser">CreateUser</a></li>
     </>);
   return (
    

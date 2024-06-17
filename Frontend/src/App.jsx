@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom"
 // import UserList from './UserList/UserList'
 import TransferMoney from './TransferMoney/TransferMoney'
 import FetchData from './FetchData/FetchData'
+import CreateUser from './CreateUser/CreateUser.jsx'
 
 
 
@@ -24,9 +25,9 @@ function App() {
        <Route path="/views" element={<FetchData/>}/>
        <Route path="/transfer" element={<TransferMoney/>}/>
        <Route path="/fetch" element={<FetchData/>}/>
+       <Route path="/createUser" element={<CreateUser/>}/>
       
-      
- 
+  
      </Routes> 
     </div>
     
