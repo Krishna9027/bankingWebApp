@@ -5,8 +5,8 @@ const CustomerSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  serialnumber: {
-    type: Number,
+  email_id: {
+    type: String,
     require: true,
   },
   balance: {

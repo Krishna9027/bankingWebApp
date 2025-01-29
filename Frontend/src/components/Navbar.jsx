@@ -80,7 +80,7 @@ function Navbar() {
   
 </label>
   <div className="">
-    <a className="btn">Button</a>
+    <a className="btn" href="/transaction">Transaction History</a>
   </div>
 </div>
 </div>

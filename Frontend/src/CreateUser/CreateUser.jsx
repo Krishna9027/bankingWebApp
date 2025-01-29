@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 function AddCustomer() {
-  const [serialNumber, setSerialNumber] = useState("");
+  const [email_id, setSerialNumber] = useState("");
   const [name, setName] = useState("");
   const [accountnumber, setAccountNumber] = useState("");
   const [balance, setBalance] = useState("");
@@ -12,7 +12,7 @@ function AddCustomer() {
     e.preventDefault();
 
     const newCustomer = {
-      serialNumber,
+      email_id,
       name,
       accountnumber,
       balance: parseFloat(balance), // Ensure balance is a number
@@ -45,15 +45,15 @@ function AddCustomer() {
           <form onSubmit={handleSubmit}>
             <div className="mt-4">
               <label
-                htmlFor="serialNumber"
+                htmlFor="email_id"
                 className="block text-sm font-medium text-gray-700"
               >
-                Serial Number:
+                Email Id:
               </label>
               <input
                 type="text"
-                id="serialNumber"
-                value={serialNumber}
+                id="email_id"
+                value={email_id}
                 onChange={(e) => setSerialNumber(e.target.value)}
                 className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 mt-1"
               />

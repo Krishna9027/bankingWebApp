@@ -1,8 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const path = require("path");
-// const dotenv = require("dotenv").config();
-// console.log(process.env.MONGOURI)
+
 const app = express();
 const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
@@ -20,11 +18,7 @@ app.use(express.json({ extended: false }));
 app.use("/api/customers", require("./routes/customer"));
 app.use("/api/transaction", require("./routes/transaction"));
 
-// app.use(express.static(path.join(__dirname, "client", "build")));
 
-// app.get("*", (req, res) => {
-// //   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-// });
 app.get("/" , async(req,res)=>{
     res.send("Hello Welocme");
 })
